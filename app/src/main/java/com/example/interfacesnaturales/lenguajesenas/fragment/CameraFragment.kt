@@ -183,6 +183,7 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener, Text
 
     override fun onResults(resultBundle: HandLandmarkerHelper.ResultBundle) {
         activity?.runOnUiThread {
+            if (_binding == null) return@runOnUiThread
             val handLandmarkerResult = resultBundle.results.first()
             val recognizedGesture = gestureRecognizer.recognize(handLandmarkerResult)
 
@@ -194,10 +195,12 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener, Text
                 if (recognizedGesture.isNotEmpty()) {
                     gestureTimer = object : CountDownTimer(holdTimeInMillis, 100) {
                         override fun onTick(millisUntilFinished: Long) {
+                            if (_binding == null) return
                             progressBar.progress = (holdTimeInMillis - millisUntilFinished).toInt()
                         }
 
                         override fun onFinish() {
+                            if (_binding == null) return
                             when (recognizedGesture) {
                                 "ROCK_ON" -> {
                                     if (isRockOnPendingDelete) {
@@ -256,18 +259,26 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener, Text
 
     override fun onError(error: String, errorCode: Int) {
         activity?.runOnUiThread {
-            Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show()
+            if(isAdded) {
+                Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+        // Termina el executor de segundo plano
+        backgroundExecutor.shutdown()
+
+        // Cancela el temporizador de gestos
+        gestureTimer?.cancel()
+
+        // Para y libera el TextToSpeech
         if (this::tts.isInitialized) {
             tts.stop()
             tts.shutdown()
         }
         _binding = null
-        backgroundExecutor.shutdown()
     }
 
     override fun onInit(status: Int) {
