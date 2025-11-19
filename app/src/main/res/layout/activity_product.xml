@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF5FD"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".comprarvoz.ProductActivity">
+
+    <TextView
+        android:id="@+id/textView_store_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Menú de Tienda"
+        android:textColor="#303F9F"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8EAF6"
+        android:padding="10dp"
+        android:text="Productos disponibles..."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#E0E0E0"
+        android:padding="10dp"
+        android:text="Estado: Escuchando producto..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#6EC0DE"
+        android:padding="15dp"
+        android:text="Resultado: Ninguno"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!-- Seccion Carrito -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Carrito de Compras"
+        android:textColor="#4CAF50"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C8E6C9"
+        android:minHeight="100dp"
+        android:padding="10dp"
+        android:text="Tu carrito está vacío."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Total: €0.00"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Diga un producto para añadirlo, o diga 'PAGAR' para finalizar, o 'ATRAS' para volver."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

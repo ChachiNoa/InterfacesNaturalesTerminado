@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">InterfacesNaturales</string>
+    <string name="status_no_face">Cara no detectada</string>
+    <string name="status_selected">Néumero %1$s seleccionado</string>
+    <string name="status_aiming">Apuntando a numero %1$s. Cierre los ojos para marcar</string>
+    <string name="instruction_text">Apunte con la nariz y cierre ojos para marcar.</string>
+    <string name="status_ready">Estado: listo</string>
+    <string name="cell_1">1</string>
+    <string name="cell_2">2</string>
+    <string name="cell_3">3</string>
+    <string name="cell_4">4</string>
+    <string name="cell_5">5</string>
+    <string name="cell_6">6</string>
+    <string name="cell_7">7</string>
+    <string name="cell_8">8</string>
+    <string name="cell_9">9</string>
+    <string name="cell_0">0</string>
+    <string name="dialed_numbers_hint">Números marcados</string>
+    <string name="cell_delete_text">Borrar</string>
+    <string name="cell_call_text">Llamar</string>
+    <string name="calling_mom">Llamando a mamá</string>
+    <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
+
+    <string name="alt_bottom_sheet_max_results_button_minus">Decreasing
+        maximum hand results button</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Increasing
+        maximum hand results button</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Decreasing
+        threshold of hand detect results button</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Increasing
+        threshold of hand detect results button</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="tv_gallery_placeholder">Click + to add an image or a video
+        to begin running the hand landmarker.</string>
+
+    <string name="label_inference_time">Inference Time</string>
+    <string name="label_fps">Frames per Second</string>
+    <string name="label_hand_detection_confidence_threshold">Detection
+        Threshold</string>
+    <string name="label_hand_tracking_confidence_threshold">Tracking
+        Threshold</string>
+    <string name="label_hand_presence_confidence_threshold">Presence
+        Threshold</string>
+    <string name="label_num_hands">Number of Hands</string>
+    <string name="label_delegate">Delegate</string>
+
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+</resources>
