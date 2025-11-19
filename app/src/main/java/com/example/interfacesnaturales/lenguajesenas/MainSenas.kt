@@ -18,7 +18,6 @@ class MainSenas : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         tts = TextToSpeech(this, this)
     }
-
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
             val result = tts!!.setLanguage(Locale("es", "ES"))

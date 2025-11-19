@@ -8,7 +8,6 @@ import java.util.List;
  * de forma persistente entre Activities.
  */
 public class Cart {
-
     // Clase interna para representar un ítem con nombre y precio
     public static class CartItem {
         public String name;

@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnLenguajeSenas = findViewById(R.id.btnLenguajeSenas);
         Button btnLeerTexto = findViewById(R.id.btnLeerTexto);
         Button btnReconocimientoFacial = findViewById(R.id.btnReconocimientoFacial);
-
         btnComprarVoz.setOnClickListener(this);
         btnLenguajeSenas.setOnClickListener(this);
         btnLeerTexto.setOnClickListener(this);

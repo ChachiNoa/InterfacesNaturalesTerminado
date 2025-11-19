@@ -188,7 +188,6 @@ public class MainMallaFacial extends AppCompatActivity {
             startListening();
         }
     }
-
     private void startListening() {
         if (speechRecognizer != null) {
             speechRecognizer.startListening(speechRecognizerIntent);

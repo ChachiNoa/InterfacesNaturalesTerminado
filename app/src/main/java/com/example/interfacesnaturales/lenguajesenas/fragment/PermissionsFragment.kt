@@ -63,7 +63,6 @@ class PermissionsFragment : Fragment() {
             )
         }
     }
-
     companion object {
 
         /** Convenience method used to check if all permissions required by this app are granted */

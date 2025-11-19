@@ -28,7 +28,6 @@ import java.util.Locale;
 import java.util.Map;
 
 public class ProductActivity extends AppCompatActivity implements RecognitionListener {
-
     private static final String LOG_TAG = "ProductListenerApp";
     private static final long REPEAT_INTERVAL_MS = 7000;
     private static final String SPANISH_LANGUAGE_TAG = "es-ES";

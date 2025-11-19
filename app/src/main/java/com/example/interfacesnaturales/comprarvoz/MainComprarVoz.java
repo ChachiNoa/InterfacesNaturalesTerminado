@@ -28,7 +28,6 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainComprarVoz extends AppCompatActivity implements RecognitionListener {
-
     private static final String LOG_TAG = "StoreListenerApp";
     private static final int PERMISSIONS_REQUEST_CODE = 1001;
     public static final String EXTRA_STORE_NAME = "com.example.STORE_NAME";

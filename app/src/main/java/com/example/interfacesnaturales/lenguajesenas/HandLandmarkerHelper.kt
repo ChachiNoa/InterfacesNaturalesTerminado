@@ -180,7 +180,6 @@ class HandLandmarkerHelper(
         val inputImageHeight: Int,
         val inputImageWidth: Int,
     )
-
     interface LandmarkerListener {
         fun onError(error: String, errorCode: Int = OTHER_ERROR)
         fun onResults(resultBundle: ResultBundle)

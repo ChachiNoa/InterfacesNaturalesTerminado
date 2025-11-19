@@ -244,7 +244,6 @@ class CameraFragment : Fragment(), HandLandmarkerHelper.LandmarkerListener, Text
                 else -> recognizedGesture
             }
             val handRotation = if (handLandmarkerResult.landmarks().isNotEmpty()) gestureRecognizer.getHandRotation(handLandmarkerResult.landmarks().first()) else 0f
-
             binding.overlay.setResults(
                 handLandmarkerResult,
                 letterToDraw,

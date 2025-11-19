@@ -95,5 +95,4 @@
         android:text="Escuchando cada 7 segundos para la selección de tienda."
         android:textAlignment="center"
         android:textSize="16sp" />
-
 </RelativeLayout>

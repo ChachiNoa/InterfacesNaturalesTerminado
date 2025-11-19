@@ -37,7 +37,6 @@ public class MainLeerTexto extends AppCompatActivity implements TextToSpeech.OnI
     private Button btnTomarFoto;
     private Button btnParar;
     private Button btnReleer;
-
     // ActivityResultLauncher para manejar el resultado de la cámara
     private final ActivityResultLauncher<Intent> cameraLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),

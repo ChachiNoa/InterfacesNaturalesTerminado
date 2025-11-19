@@ -89,5 +89,4 @@
                 android:stepSize="100" />
         </LinearLayout>
     </LinearLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

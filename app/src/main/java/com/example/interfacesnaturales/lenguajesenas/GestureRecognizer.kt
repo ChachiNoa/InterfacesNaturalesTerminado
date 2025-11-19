@@ -12,7 +12,6 @@ class GestureRecognizer {
         if (handLandmarkerResult.landmarks().isEmpty()) {
             return ""
         }
-
         // Check for special gestures first
         if (isRockOn(handLandmarkerResult)) {
             return "ROCK_ON"

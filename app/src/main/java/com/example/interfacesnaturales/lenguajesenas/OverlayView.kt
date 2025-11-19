@@ -40,7 +40,6 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
         invalidate()
         initPaints()
     }
-
     private fun initPaints() {
         linePaint.color =
             ContextCompat.getColor(context!!, R.color.mp_color_primary)
